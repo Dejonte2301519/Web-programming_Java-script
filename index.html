@@ -1,0 +1,62 @@
+<!--Student Name: Dejonte Maxwell
+Student ID: 2301519
+Module: CIT2011 - Web Programming
+Assignment: Week 8 - Interactive Task Manager
+Description:
+A task management application using JavaScript,
+arrays, objects, events and local storage.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Task Manager</h1>
+        <p>Organize and manage your daily tasks</p>
+    </header>
+    <main>
+        <!-- Form Section -->
+        <section class="form-section">
+            <h2>Add New Task</h2>
+            <form id="task-form">
+                <div class="input-group">
+                    <label for="task-title">Task Description</label>
+                    <input
+                        type="text"
+                        id="task-title"
+                        placeholder="Enter task description"
+                        required>
+                </div>
+                <div class="input-group">
+                    <label for="task-priority">Priority</label>
+                    <select id="task-priority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <button type="submit" id="add-btn">
+                    Add Task
+                </button>
+            </form>
+        </section>
+        <!-- Task Display Section -->
+        <section class="list-section">
+            <h2>My Tasks</h2>
+            <!-- Search Bar -->
+            <input
+                type="text"
+                id="search-bar"
+                placeholder="Search tasks...">
+            <!-- Task Container -->
+            <div id="task-list">
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
